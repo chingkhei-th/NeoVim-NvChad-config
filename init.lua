@@ -43,6 +43,11 @@ dofile(vim.g.base46_cache .. "statusline")
 require "options"
 require "nvchad.autocmds"
 
+-- Markdown Render
+require('render-markdown').setup({
+    file_types = { 'markdown', 'quarto' },
+})
+
 -- load remote plugins from main repo
 require "nvchad.plugins"
 
